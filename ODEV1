@@ -1,0 +1,13 @@
+1)select f.title, f.description from film f;
+2)select * from film f
+  where f.length not between 60 and 75;
+3)select * from film f
+  where f.rental_rate = 0.99
+  AND (f.replacement_cost = 12.99 
+  OR   f.replacement_cost = 28.99);
+4)select c.last_name from customer c 
+  where c.first_name = 'Mary'
+  =&gt; Smith
+5)select f.length from film f
+  where f.length < 50 
+  and rental_rate NOT IN (2.99, 4.99);
