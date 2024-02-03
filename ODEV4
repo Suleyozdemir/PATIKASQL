@@ -1,0 +1,9 @@
+1)SELECT DISTINCT(F.REPLACEMENT_COST) FROM FILM F
+2)SELECT COUNT(DISTINCT(F.REPLACEMENT_COST)) FROM FILM F
+3) select * from film f
+   where title ilike 't%'
+   and rating = 'G'
+4) select * from country c
+   where length(c.country) = 5
+5) select * from city 
+   where city ilike '%r'
