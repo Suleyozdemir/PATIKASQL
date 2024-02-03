@@ -1,0 +1,16 @@
+1)SELECT title, length
+FROM film
+WHERE title LIKE '%n'
+ORDER BY length DESC
+LIMIT 5;
+
+2)SELECT * FROM film
+WHERE title LIKE '%n'
+ORDER BY LENGTH ASC
+OFFSET 6
+limit 10;
+
+3)select * from customer 
+where store_id = 1 
+  order by last_name desc
+limit 4;
