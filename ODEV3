@@ -1,0 +1,12 @@
+1)SELECT * FROM COUNTRY C
+  WHERE C.COUNTRY LIKE 'A%a'
+2)select * from country c
+  where length(c.country)>=6
+ and c.country like '%n' 
+3) select * from film f
+   where length(f.title)>=4
+   and length(f.title) ilike '%t%t%t%t%'
+4) SELECT * FROM film 
+   WHERE title LIKE 'C%' 
+   AND length(title)>=90 
+   AND rental_rate=2.99;
