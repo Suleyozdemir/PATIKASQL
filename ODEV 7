@@ -1,0 +1,110 @@
+test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+1) create table employee(
+   id integer not nul,
+   name VARCHAR(50), 
+   birthday DATE, 
+   email VARCHAR(100)
+);
+
+2)INSERT INTO employee (name, birthday, email) 
+VALUES
+  (1, 'Janeta', '3/2/2023', 'jdeeming0@illinois.edu') ,
+  (2, 'Corenda', '3/27/2023', 'cdoughartie1@last.fm') ,
+  (3, 'Marleah', '9/10/2023', 'mbulter2@friendfeed.com') ,
+  (4, 'Gabe', '4/1/2023', 'gpyke3@a8.net') ,
+  (5, 'Zorine', '12/10/2023', 'zbarthram4@usnews.com') ,
+  (6, 'Emmet', '7/30/2023', 'eambrosini5@shareasale.com') ,
+  (7, 'Mei', '6/4/2023', 'mwooder6@github.io') ,
+  (8, 'Crin', '3/12/2023', 'clandrean7@yahoo.com') ,
+  (9, 'Leonard', '11/23/2023', 'lbenedek8@live.com') ,
+  (10, 'Norman', '5/25/2023', 'nverrier9@ebay.co.uk') ,
+  (11, 'Meghan', '8/12/2023', 'msanchoa@reference.com') ,
+  (12, 'Ariela', '8/12/2023', 'agoodfieldb@goo.ne.jp') ,
+  (13, 'Clemmie', '9/28/2023', 'camoorec@domainmarket.com') ,
+  (14, 'Findley', '1/15/2024', 'fjenningsd@sciencedaily.com') ,
+  (15, 'Aubert', '11/17/2023', 'agreenhalfe@apache.org') ,
+  (16, 'Missy', '1/11/2024', 'mdavidovef@yahoo.co.jp') ,
+  (17, 'Nancey', '8/27/2023', 'nrawnsleyg@youtu.be') ,
+  (18, 'Jemima', '10/21/2023', 'jgutchh@liveinternet.ru') ,
+  (19, 'Giuditta', '11/12/2023', 'grobjohnsi@last.fm') ,
+  (20, 'Ozzy', '3/17/2023', 'odahmkej@ftc.gov') ,
+  (21, 'Brietta', '1/28/2024', 'bbelshawk@noaa.gov') ,
+  (22, 'Frans', '2/23/2023', 'fwarel@utexas.edu') ,
+  (23, 'Vanya', '4/14/2023', 'vstandrinm@nps.gov') ,
+  (24, 'Lucie', '6/19/2023', 'lhansonn@samsung.com') ,
+  (25, 'Remy', '1/1/2024', 'rureno@businesswire.com') ,
+  (26, 'Kris', '2/24/2023', 'kstollmeierp@123-reg.co.uk') ,
+  (27, 'Cristi', '10/16/2023', 'cmcmeekinq@odnoklassniki.ru') ,
+  (28, 'Charline', '8/9/2023', 'cwannanr@icq.com') ,
+  (29, 'Massimiliano', '1/24/2024', 'mferebees@infoseek.co.jp') ,
+  (30, 'Seana', '12/2/2023', 'sdigmant@4shared.com') ,
+  (31, 'Cross', '10/14/2023', 'cpurringtonu@4shared.com') ,
+  (32, 'Torrey', '4/14/2023', 'tpledgerv@nsw.gov.au') ,
+  (33, 'Tessa', '6/20/2023', 'tmarcusw@redcross.org') ,
+  (34, 'Lance', '4/4/2023', 'lkaasmannx@wiley.com') ,
+  (35, 'Mellicent', '1/7/2024', 'mbeeny@virginia.edu') ,
+  (36, 'Jim', '8/16/2023', 'jdavidoviciz@arizona.edu') ,
+  (37, 'Lucas', '8/6/2023', 'llabitt10@go.com') ,
+  (38, 'Levey', '10/27/2023', 'lkenelin11@unicef.org') ,
+  (39, 'Trescha', '7/30/2023', 'tgottschalk12@multiply.com') ,
+  (40, 'Brooks', '9/20/2023', 'bdemattia13@toplist.cz') ,
+  (41, 'Daniella', '11/21/2023', 'dtompsett14@howstuffworks.com') ,
+  (42, 'Colver', '2/17/2023', 'chowe15@biglobe.ne.jp') ,
+  (43, 'Nathalie', '12/15/2023', 'nbellany16@yellowbook.com') ,
+  (44, 'Jodi', '11/2/2023', 'jstorrar17@addtoany.com') ,
+  (45, 'Joletta', '1/12/2024', 'jgateley18@list-manage.com') ,
+  (46, 'Craggie', '9/5/2023', 'clipgens19@businesswire.com') ,
+  (47, 'Daffy', '2/27/2023', 'dkidder1a@unicef.org') ,
+  (48, 'Barbey', '6/24/2023', 'bmordanti1b@simplemachines.org') ,
+  (49, 'Seumas', '4/1/2023', 'spapps1c@cpanel.net') ,
+  (50, 'Teri', '10/7/2023', 'tmasham1d@eepurl.com') ;
+
+
+Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+-- 1. Örnek: Bir çalışanın adını güncelle
+UPDATE employee
+SET name = 'New Name'
+WHERE id = 1;
+
+-- 2. Örnek: Bir çalışanın doğum tarihini güncelle
+UPDATE employee
+SET birthday = '1995-03-20'
+WHERE id = 2;
+
+-- 3. Örnek: Bir çalışanın e-posta adresini güncelle
+UPDATE employee
+SET email = 'new.email@example.com'
+WHERE id = 3;
+
+-- 4. Örnek: Bir çalışanın adını ve e-posta adresini güncelle
+UPDATE employee
+SET name = 'Updated Name', email = 'updated.email@example.com'
+WHERE id = 4;
+
+-- 5. Örnek: Bir çalışanın doğum tarihini ve e-posta adresini güncelle
+UPDATE employee
+SET birthday = '1998-09-10', email = 'updated.email2@example.com'
+WHERE id = 5;
+
+Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+-- 1. Örnek: Belirli bir çalışanı ID'ye göre sil
+DELETE FROM employee
+WHERE id = 1;
+
+-- 2. Örnek: Belirli bir çalışanı adına göre sil
+DELETE FROM employee
+WHERE name = 'John Doe';
+
+-- 3. Örnek: Belirli bir çalışanı doğum tarihine göre sil
+DELETE FROM employee
+WHERE birthday = '1995-03-20';
+
+-- 4. Örnek: Belirli bir çalışanı e-posta adresine göre sil
+DELETE FROM employee
+WHERE email = 'new.email@example.com';
+
+-- 5. Örnek: Belirli bir çalışanı adı ve doğum tarihine göre sil
+DELETE FROM employee
+WHERE name = 'Updated Name' AND birthday = '1998-09-10';
+
